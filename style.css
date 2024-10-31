@@ -1,0 +1,107 @@
+/* Gaya untuk body, menggunakan background gradient dan layout responsif */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Kontainer form dengan tampilan bayangan dan border */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Gaya judul form */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* Gambar CAPTCHA dengan sedikit gaya */
+img {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input teks CAPTCHA */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #66a6ff;
+}
+
+/* Tombol submit dengan animasi hover */
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk pesan sukses */
+p.success {
+    color: green;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+
+/* Pesan error dengan tampilan yang lebih mencolok */
+p.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+/* Responsif: memperbaiki tampilan di layar kecil */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
